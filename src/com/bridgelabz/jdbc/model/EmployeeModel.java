@@ -1,5 +1,4 @@
 package com.bridgelabz.jdbc.model;
-
 import java.sql.Date;
 
 public class EmployeeModel {
@@ -57,5 +56,14 @@ public class EmployeeModel {
 
 	public void setStart_date(Date start_date) {
 		this.start_date = start_date;
+	}
+
+	@Override
+	public String toString() {
+
+		return "ID : " + id + "\nName : " + name
+				+ "\nGender : " + gender + "\nPhone : "
+				+ phone + "" + "\nAddress : " + address
+				+ "\nJoining Date : " + start_date;
 	}
 }
